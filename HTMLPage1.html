@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>css grid</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        div.page{
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 1fr 10fr 1fr;
+            grid-template-columns: 1fr 5fr;
+            grid-template-areas: 'header header''menu mainContent''footing footing';
+
+        }
+        div.header{
+            background-color:blue;
+            grid-area: header;
+        }
+
+        div.menu{
+            background-color:yellow;
+            grid-area: menu;
+            
+        }
+
+        div.mainContent{
+            background-color:red;
+            grid-area: mainContent;
+        }
+
+        div.footing{
+            color:white;
+            background-color:black;
+            grid-area: footing;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header"><h1><center>Header</center></h1> </div>
+        <div class="menu"><h1>Menu</h1>
+            <p>hei </p>
+            <p>Hei2</p>
+        </div>
+        <div class="mainContent">
+        <h1>MeinContent</h1>
+            <p>A vexed he climes friends heart for to haply as for few me save delphis satiety awake had could some</p>
+        </div>
+        <div class="footing" >footing</div>
+    </div>
+</body>
+</html>
